@@ -2,10 +2,7 @@ leetcode
 ========
 
 This is the leetcode writen by Java
-LeetCode
-========
 
-LeetCode C++ Solutions
 
 | Title | Solution | Add Date | Difficulty |
 | ----- | -------- | -------- | ---------- |
