@@ -89,7 +89,7 @@ This is the leetcode solution writen by Java
 |[Edit Distance](https://oj.leetcode.com/problems/edit-distance/)| [Java](./src/Edit Distance/Solution.java)|2012/4/4|Hard|
 |[Simplify Path](https://oj.leetcode.com/problems/simplify-path/)| [Java](./src/Simplify Path/Solution.java)|2012/4/3|Medium|
 |[Climbing Stairs](https://oj.leetcode.com/problems/climbing-stairs/)| [Java](./src/Climbing Stairs/Solution.java)|2012/4/3|Easy|
-|[Sqrt(x)](https://oj.leetcode.com/problems/sqrtx/)| [Java](./src/Sqrt(x)/Solution.java)/Solution.java)|2012/4/3|Medium|
+|[Sqrt(x)](https://oj.leetcode.com/problems/sqrtx/)| [Java](./src/Sqrt/Solution.java)|2012/4/3|Medium|
 |[Text Justification](https://oj.leetcode.com/problems/text-justification/)| [Java](./src/Text Justification/Solution.java)|2012/4/3|Hard|
 |[Plus One](https://oj.leetcode.com/problems/plus-one/)| [Java](./src/Plus One/Solution.java)|2012/4/2|Easy|
 |[Valid Number](https://oj.leetcode.com/problems/valid-number/)| [Java](./src/Valid Number/Solution.java)|2012/4/2|Easy|
@@ -109,7 +109,7 @@ This is the leetcode solution writen by Java
 |[Maximum Subarray](https://oj.leetcode.com/problems/maximum-subarray/)| [Java](./src/Maximum Subarray/Solution.java)|2012/3/21|Medium|
 |[N-Queens II](https://oj.leetcode.com/problems/n-queens-ii/)| [Java](./src/N-Queens II/Solution.java)|2012/3/20|Hard|
 |[N-Queens](https://oj.leetcode.com/problems/n-queens/)| [Java](./src/N-Queens/Solution.java)|2012/3/19|Hard|
-|["Pow(x, n)"](https://oj.leetcode.com/problems/powx-n/)| [Java](./src/"Pow(x, n)"/Solution.java)"/Solution.java)|2012/3/19|Medium|
+|["Pow(x, n)"](https://oj.leetcode.com/problems/powx-n/)| [Java](./src/Pow/Solution.java)|2012/3/19|Medium|
 |[Anagrams](https://oj.leetcode.com/problems/anagrams/)| [Java](./src/Anagrams/Solution.java)|2012/3/19|Medium|
 |[Rotate Image](https://oj.leetcode.com/problems/rotate-image/)| [Java](./src/Rotate Image/Solution.java)|2012/3/17|Medium|
 |[Permutations II](https://oj.leetcode.com/problems/permutations-ii/)| [Java](./src/Permutations II/Solution.java)|2012/3/16|Hard|
@@ -131,7 +131,7 @@ This is the leetcode solution writen by Java
 |[Next Permutation](https://oj.leetcode.com/problems/next-permutation/)| [Java](./src/Next Permutation/Solution.java)|2012/2/25|Medium|
 |[Substring with Concatenation of All Words](https://oj.leetcode.com/problems/substring-with-concatenation-of-all-words/)| [Java](./src/Substring with Concatenation of All Words/Solution.java)|2012/2/23|Hard|
 |[Divide Two Integers](https://oj.leetcode.com/problems/divide-two-integers/)| [Java](./src/Divide Two Integers/Solution.java)|2012/2/18|Medium|
-|[Implement strStr()](https://oj.leetcode.com/problems/implement-strstr/)| [Java](./src/Implement strStr()/Solution.java)/Solution.java)|2012/2/18|Easy|
+|[Implement strStr()](https://oj.leetcode.com/problems/implement-strstr/)| [Java](./src/strStr/Solution.java)|2012/2/18|Easy|
 |[Remove Element](https://oj.leetcode.com/problems/remove-element/)| [Java](./src/Remove Element/Solution.java)|2012/2/16|Easy|
 |[Remove Duplicates from Sorted Array](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array/)| [Java](./src/Remove Duplicates from Sorted Array/Solution.java)|2012/2/16|Easy|
 |[Reverse Nodes in k-Group](https://oj.leetcode.com/problems/reverse-nodes-in-k-group/)| [Java](./src/Reverse Nodes in k-Group/Solution.java)|2012/2/15|Hard|
@@ -150,7 +150,7 @@ This is the leetcode solution writen by Java
 |[Container With Most Water](https://oj.leetcode.com/problems/container-with-most-water/)| [Java](./src/Container With Most Water/Solution.java)|2012/1/8|Medium|
 |[Regular Expression Matching](https://oj.leetcode.com/problems/regular-expression-matching/)| [Java](./src/Regular Expression Matching/Solution.java)|2012/1/8|Hard|
 |[Palindrome Number](https://oj.leetcode.com/problems/palindrome-number/)| [Java](./src/Palindrome Number/Solution.java)|2012/1/4|Easy|
-|[String to Integer (atoi)](https://oj.leetcode.com/problems/string-to-integer-atoi/)| [Java](./src/tring to Integer (atoi)/Solution.java)/Solution.java)|2011/12/26|Easy|
+|[String to Integer (atoi)](https://oj.leetcode.com/problems/string-to-integer-atoi/)| [Java](./src/StringToInteger/Solution.java)|2011/12/26|Easy|
 |[Reverse Integer](https://oj.leetcode.com/problems/reverse-integer/)| [Java](./src/Reverse Integer/Solution.java)|2011/12/25|Easy|
 |[ZigZag Conversion](https://oj.leetcode.com/problems/zigzag-conversion/)| [Java](./src/ZigZag Conversion/Solution.java)|2011/12/5|Easy|
 |[Longest Palindromic Substring](https://oj.leetcode.com/problems/longest-palindromic-substring/)| [Java](./src/Longest Palindromic Substring/Solution.java)|2011/11/11|Medium|
@@ -158,4 +158,3 @@ This is the leetcode solution writen by Java
 |[Longest Substring Without Repeating Characters](https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/)| [Java](./src/Longest Substring Without Repeating Characters/Solution.java)|2011/5/15|Medium|
 |[Median of Two Sorted Arrays](https://oj.leetcode.com/problems/median-of-two-sorted-arrays/)| [Java](./src/Median of Two Sorted Arrays/Solution.java)|2011/3/27|Hard|
 |[Two Sum](https://oj.leetcode.com/problems/two-sum/)| [Java](./src/Two Sum/Solution.java)|2011/3/13|Medium|
-
