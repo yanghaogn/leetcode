@@ -7,7 +7,7 @@ This is the leetcode writen by Java
 | Title | Solution | Add Date | Difficulty |
 | ----- | -------- | -------- | ---------- |
 |[Find Minimum in Rotated Sorted Array II](https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)| [Java](./src/Find Minimum in Rotated Sorted Array II/Solution.java)|2014/10/20|Hard|
-|[Find Minimum in Rotated Sorted Array](https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array/)| [Java](./src/Find Minimum in Rotated Sorted Array/Solution.Java)|2014/10/15|Medium|
+|[Find Minimum in Rotated Sorted Array](https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array/)| [Java](./src/Find Minimum in Rotated Sorted Array/Solution.java)|2014/10/15|Medium|
 |[Maximum Product Subarray](https://oj.leetcode.com/problems/maximum-product-subarray/)| [Java](./src/Maximum Product Subarray/Solution.java)|2014/9/23|Medium|
 |[Reverse Words in a String](https://oj.leetcode.com/problems/reverse-words-in-a-string/)| [Java](./src/Reverse Words in a String/Solution.java)|2014/3/5|Medium|
 |[Evaluate Reverse Polish Notation](https://oj.leetcode.com/problems/evaluate-reverse-polish-notation/)| [Java](./src/Evaluate Reverse Polish Notation/Solution.java)|2013/11/27|Medium|
