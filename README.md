@@ -12,8 +12,8 @@ This is the leetcode solution written by Java
 |[Max Points on a Line](https://oj.leetcode.com/problems/max-points-on-a-line/)| [Java](./src/Max Points on a Line/Solution.java)|2013/11/22|Hard|
 |[Sort List](https://oj.leetcode.com/problems/sort-list/)| [Java](./src/Sort List/Solution.java)|2013/11/16|Medium|
 |[Insertion Sort List](https://oj.leetcode.com/problems/insertion-sort-list/)| [Java](./src/Insertion Sort List/Solution.java)|2013/11/12|Medium|
-|[LRU Cache](https://oj.leetcode.com/problems/lru-cache/)| [Java](./src/LRU Cache/Solution.java)|2013/11/9|Hard|
-|[Binary Tree Postorder Traversal](https://oj.leetcode.com/problems/binary-tree-postorder-traversal/)| [Java](./src/Binary Tree Postorder Traversal/LRUCache.java)|2013/11/7|Hard|
+|[LRU Cache](https://oj.leetcode.com/problems/lru-cache/)| [Java](./src/LRU Cache/LRUCache.java)|2013/11/9|Hard|
+|[Binary Tree Postorder Traversal](https://oj.leetcode.com/problems/binary-tree-postorder-traversal/)| [Java](./src/Binary Tree Postorder Traversal/Solution.java)|2013/11/7|Hard|
 |[Binary Tree Preorder Traversal](https://oj.leetcode.com/problems/binary-tree-preorder-traversal/)| [Java](./src/Binary Tree Preorder Traversal/Solution.java)|2013/11/5|Medium|
 |[Reorder List](https://oj.leetcode.com/problems/reorder-list/)| [Java](./src/Reorder List/Solution.java)|2013/11/2|Medium|
 |[Linked List Cycle II](https://oj.leetcode.com/problems/linked-list-cycle-ii/)| [Java](./src/Linked List Cycle II/Solution.java)|2013/10/30|Medium|
