@@ -4,7 +4,7 @@ public class Solution
     {
         int start = 0;
         int end = num.length - 1;
-        while (start < end)
+        while (start < end&&num[start]>=num[end])
         {
             int middle = start + ((end - start) >> 1);
             if (num[start] == num[end] && num[middle] == num[end])
