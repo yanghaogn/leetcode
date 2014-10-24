@@ -1,4 +1,4 @@
-public class ListNode
+class ListNode
 {
     int val;
 
@@ -17,29 +17,22 @@ public class Solution
     public ListNode insertionSortList(ListNode head)
     {
         if (head == null || head.next == null) return head;
-        ListNode newListHead = head;
+        ListNode pHead = new ListNode(0);
+        pHead.next = head;
         ListNode p = head.next;
-        ListNode pNewList = newListHead;
-        newListHead.next = null;
-        for (; p != null;)
+        ListNode pNewList;
+        pHead.next.next = null;
+        while (p != null)
         {
-            if (p.val < newListHead.val)
-            {
-                pNewList = p;
-                p = p.next;
-                pNewList.next = newListHead;
-                newListHead = pNewList;
-                continue;
-            }
-            for (pNewList = newListHead; pNewList.next != null; pNewList = pNewList.next)
+            for (pNewList = pHead; pNewList.next != null; pNewList = pNewList.next)
             {
                 if (pNewList.next.val >= p.val) break;
             }
-            ListNode pNext = pNewList.next;
+            ListNode next = pNewList.next;
             pNewList.next = p;
             p = p.next;
-            pNewList.next.next = pNext;
+            pNewList.next.next = next;
         }
-        return newListHead;
+        return pHead.next;
     }
 }
