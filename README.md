@@ -1,6 +1,6 @@
 leetcode
 ========
-This is the leetcode solution writen by Java
+This is the leetcode solution written by Java
 
 | Title | Solution | Add Date | Difficulty |
 | ----- | -------- | -------- | ---------- |
