@@ -16,22 +16,16 @@ public class Solution
 {
     public ListNode reverse(ListNode head)
     {
-        if (head == null || head.next == null)
+        ListNode pHead=new ListNode(0);
+        for(ListNode p=head;p!=null;)
         {
-            return head;
+            ListNode next=p.next;
+            p.next=pHead.next;
+            pHead.next=p;
+            p=next;
         }
-        ListNode i = head;
-        ListNode j = i.next;
-        ListNode k = j.next;
-        head.next = null;
-        for (; k != null; i = j, j = k, k = k.next)
-        {
-            j.next = i;
-        }
-        j.next = i;
-        return j;
+        return pHead.next;
     }
-
     public void reorderList(ListNode head)
     {
         if (head == null || head.next == null || head.next.next == null)
