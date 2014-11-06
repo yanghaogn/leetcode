@@ -6,33 +6,23 @@ public class Solution
         {
             return 0;
         }
-        final int ROW = triangle.size();
-        int NUM = ROW * (ROW + 1) / 2;
-        int minValue[] = new int[NUM];
-        int position = 0;
-        int row = 0, col;
-        int rowStartIndex = 0;
-        int result;
-        minValue[position++ ] = triangle.get(0).get(0);
-        for (row = 1; row < ROW; row++ )
+        int ROW = triangle.size();
+        int result[] = new int[ROW];
+        int row = ROW - 1;
+        int col;
+        List<Integer> list = triangle.get(row);
+        for (col = 0; col <= row; col++ )
         {
-            rowStartIndex += row;
-            List<Integer> rowList = triangle.get(row);
-            minValue[position++ ] = rowList.get(0) + minValue[rowStartIndex - row];
-            int left = rowStartIndex - row;
-            for (col = 1; col < row; col++ )
+            result[col] = list.get(col);
+        }
+        for (row = ROW - 2; row >= 0; row-- )
+        {
+            list = triangle.get(row);
+            for (col = 0; col <= row; col++ )
             {
-                minValue[position++ ] = Math.min(minValue[left], minValue[left + 1])
-                                        + rowList.get(col);
-                left++ ;
+                result[col] = list.get(col) + Math.min(result[col], result[col + 1]);
             }
-            minValue[position++ ] = rowList.get(row) + minValue[rowStartIndex - 1];
         }
-        result = minValue[rowStartIndex];
-        for (int i = 1; i < ROW; i++ )
-        {
-            result = Math.min(minValue[rowStartIndex + i], result);
-        }
-        return result;
+        return result[0];
     }
 }
