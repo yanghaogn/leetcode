@@ -12,7 +12,6 @@ public class TreeNode
     }
 }
 
-
 public class Solution
 {
     public void flatten(TreeNode root)
@@ -24,19 +23,18 @@ public class Solution
         TreeNode left = root.left;
         TreeNode right = root.right;
         TreeNode last = root;
-        List<TreeNode> list = new LinkedList<TreeNode>();
+        Stack<TreeNode> stack = new Stack<TreeNode>();
         if (right != null)
         {
-            list.add(0, right);
+            stack.push(right);
         }
         if (left != null)
         {
-            list.add(0, left);
+            stack.push(left);
         }
-        while (list.size() > 0)
+        while (!stack.empty())
         {
-            TreeNode p = list.get(0);
-            list.remove(0);
+            TreeNode p = stack.pop();
             last.left = null;
             last.right = p;
             last = p;
@@ -44,11 +42,11 @@ public class Solution
             right = last.right;
             if (right != null)
             {
-                list.add(0, right);
+                stack.push(right);
             }
             if (left != null)
             {
-                list.add(0, left);
+                stack.push(left);
             }
         }
     }
