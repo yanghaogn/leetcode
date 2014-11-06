@@ -27,7 +27,6 @@ public class Solution
         {
             next = new RandomListNode(p.label);
             next.next = p.next;
-            next.random = null;
             p.next = next;
         }
         for (p = head; p != null; p = next.next)
