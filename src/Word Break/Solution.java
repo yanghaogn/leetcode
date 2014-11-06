@@ -13,11 +13,11 @@ public class Solution
         if (isCal[startIndex]) return canBreak[startIndex];
         boolean result = false;
         int i = 0;
-        final int remaingLEN = LEN - startIndex;
+        int remainingLEN = LEN - startIndex;
         for (String word : dict)
         {
             int n = word.length();
-            if (n <= remaingLEN)
+            if (n <= remainingLEN)
             {
                 for (i = 0; i < n; i++ )
                 {
@@ -28,7 +28,7 @@ public class Solution
                 }
                 if (i == n)
                 {
-                    if (n == remaingLEN)
+                    if (n == remainingLEN)
                     {
                         result = true;
                     }
@@ -57,7 +57,6 @@ public class Solution
         this.dict = dict;
         for (int i = 0; i < LEN; i++ )
         {
-            canBreak[i] = true;
             isCal[i] = false;
         }
         canBreak(s, 0);
