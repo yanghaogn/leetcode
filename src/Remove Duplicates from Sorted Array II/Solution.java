@@ -4,16 +4,16 @@ public class Solution
     {
         int result = A.length;
         int i, j;
-        for (i = 2, j = 2; i < A.length; i++ )
+        for (i = 2, j = 1; i < A.length; i++ )
         {
-            if ((A[i] == A[j - 1]) && (A[i] == A[j - 2]))
+            if ((A[i] == A[j]) && (A[i] == A[j - 1]))
             {
                 result-- ;
             }
             else
             {
-                A[j] = A[i];
                 j++ ;
+                A[j] = A[i];
             }
         }
         return result;
