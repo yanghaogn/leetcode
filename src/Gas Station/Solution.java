@@ -1,3 +1,9 @@
+package org.apache.Java.Test;
+
+
+import java.util.Set;
+
+
 public class Solution
 {
     public int canCompleteCircuit(int[] gas, int[] cost)
@@ -20,6 +26,6 @@ public class Solution
         {
             return -1;
         }
-        return N % gas.length;
+        return N == gas.length ? 0 : N;
     }
 }
