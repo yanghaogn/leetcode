@@ -13,42 +13,20 @@ public class Solution
         }
         int[] numCandy = new int[N];
         int[] bottom = new int[N];
-        int bottomIndex = -1;
+        int bottomLen = -1;
         for (int i = 0; i < N; i++ )
         {
             numCandy[i] = -1;
-            if (i == 0)
+            if ((i > 0 ? ratings[i] <= ratings[i - 1] : true)
+                && (i < N - 1 ? ratings[i] <= ratings[i + 1] : true))
             {
-                if (ratings[0] <= ratings[1])
-                {
-                    bottom[++bottomIndex] = i;
-                    numCandy[i] = 1;
-                }
-            }
-            else
-            {
-                if (i == N - 1)
-                {
-                    if (ratings[i] <= ratings[i - 1])
-                    {
-                        bottom[++bottomIndex] = i;
-                        numCandy[i] = 1;
-                    }
-                }
-                else
-                {
-                    if (ratings[i] <= ratings[i - 1] && ratings[i] <= ratings[i + 1])
-                    {
-                        bottom[++bottomIndex] = i;
-                        numCandy[i] = 1;
-                    }
-                }
+                bottom[++bottomLen] = i;
+                numCandy[i] = 1;
             }
         }
-
         int start = -1;
         int end = -1;
-        for (int index = 0; index <= bottomIndex; index++ )
+        for (int index = 0; index <= bottomLen; index++ )
         {
             start = end;
             end = bottom[index];
@@ -74,9 +52,9 @@ public class Solution
             }
         }
         int result = 0;
-        for (int i = 0; i < N; i++ )
+        for (int num : numCandy)
         {
-            result += numCandy[i];
+            result += num;
         }
         return result;
     }
