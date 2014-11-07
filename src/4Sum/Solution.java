@@ -1,56 +1,5 @@
 public class Solution
 {
-    public void swap(int[] array, int i, int j)
-    {
-        int t = array[i];
-        array[i] = array[j];
-        array[j] = t;
-    }
-
-    public void quickSort(int[] array, int start, int end)
-    {
-        if (start >= end)
-        {
-            return;
-        }
-        int middle = (start + end) / 2;
-        swap(array, start, middle);
-        int i = start + 1;
-        while (i <= end)
-        {
-            if (array[i] >= array[start])
-            {
-                break;
-            }
-            i++ ;
-        }
-        int j = i + 1;
-        for (; j <= end;)
-        {
-            while (j <= end)
-            {
-                if (array[j] < array[start])
-                {
-                    break;
-                }
-                j++ ;
-            }
-            if (j <= end)
-            {
-                swap(array, i, j);
-                i++ ;
-                j++ ;
-            }
-        }
-        i-- ;
-        if (array[i] < array[start])
-        {
-            swap(array, start, i);
-        }
-        quickSort(array, start, i - 1);
-        quickSort(array, i + 1, end);
-    }
-
     List<List<Integer>> twoSum(int[] array, int startIndex, int endIndex, int dest)
     {
         List<List<Integer>> result = new LinkedList<List<Integer>>();
@@ -95,7 +44,7 @@ public class Solution
         {
             array[i] = num[i];
         }
-        quickSort(array, 0, array.length - 1);
+        Arrays.sort(array);
         int start = 0;
         int end = array.length - 1;
         for (start = 0; start < array.length - 3;)
