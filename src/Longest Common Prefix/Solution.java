@@ -1,44 +1,34 @@
+package org.apache.Java.Test;
+
+
+import java.util.LinkedList;
+import java.util.List;
+
+
 public class Solution
 {
-    int minLEN = Integer.MAX_VALUE;
-
-    public String longestCommonPrefix(List<String> strs)
+    public String longestCommonPrefix(List<String> list)
     {
-        if (minLEN == 0)
+        String a = list.get(0);
+        int minLEN = a.length();
+        while (list.size() >= 2)
         {
-            return "";
-        }
-        int LEN = strs.size();
-        if (LEN == 1)
-        {
-            return strs.get(0);
-        }
-        List<String> prefix = new LinkedList<String>();
-        int index = 0;
-        StringBuilder builder = new StringBuilder("");
-        for (index = 1; index < LEN; index += 2)
-        {
-            builder.delete(0, builder.length());
-            String a = strs.get(index);
-            String b = strs.get(index - 1);
-            minLEN = Math.min(a.length(), minLEN);
+            String b = list.get(1);
             minLEN = Math.min(b.length(), minLEN);
             for (int i = 0; i < minLEN; i++ )
             {
                 if (a.charAt(i) == b.charAt(i))
                 {
-                    builder.append(a.charAt(i));
                     continue;
                 }
-                break;
+                else
+                {
+                    minLEN = i;
+                }
             }
-            prefix.add(builder.toString());
+            list.remove(1);
         }
-        if (index == LEN)
-        {
-            prefix.add(strs.get(index - 1));
-        }
-        return longestCommonPrefix(prefix);
+        return list.get(0).substring(0, minLEN);
     }
 
     public String longestCommonPrefix(String[] strs)
