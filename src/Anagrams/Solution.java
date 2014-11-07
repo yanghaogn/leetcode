@@ -1,3 +1,12 @@
+package org.apache.Java.Test;
+
+
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Stack;
+
+
 public class Solution
 {
     String toAscendingString(String s)
@@ -5,19 +14,6 @@ public class Solution
         char[] array = s.toCharArray();
         Arrays.sort(array);
         return new String(array);
-    }
-
-    public boolean isAnagram(String first, String second)
-    {
-        int LEN = first.length();
-        for (int i = 0; i < LEN; i++ )
-        {
-            if (first.charAt(i) != second.charAt(LEN - i - 1))
-            {
-                return false;
-            }
-        }
-        return true;
     }
 
     public List<String> anagrams(String[] strs)
