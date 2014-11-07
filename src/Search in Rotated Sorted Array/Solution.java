@@ -17,7 +17,7 @@ public class Solution
                 return -1;
             }
         }
-        int middle = (int)(((long)start + (long)end) / 2);
+        int middle = start + ((end - start) >> 1);
         if (A[middle] == target)
         {
             return middle;
@@ -47,7 +47,7 @@ public class Solution
         {
             return -1;
         }
-        int middle = (int)(((long)start + (long)end) / 2);
+        int middle = start + ((end - start) >> 1);
         if (A[middle] > A[start])
         {
             if (A[middle] > A[middle + 1])
