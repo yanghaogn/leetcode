@@ -1,23 +1,23 @@
 public class Solution
 {
-    public String strStr(String haystack, String needle)
+    public int strStr(String haystack, String needle)
     {
         if (needle == null || haystack == null)
         {
-            return null;
+            return -1;
         }
         Map<Character, Integer> map = new HashMap<Character, Integer>();
-        int i;
+        int index;
         int j;
-        for (i = 0; i < needle.length(); i++ )
+        for (index = 0; index < needle.length(); index++ )
         {
-            map.put(needle.charAt(i), i);
+            map.put(needle.charAt(index), index);
         }
-        for (i = 0; i <= haystack.length() - needle.length();)
+        for (index = 0; index <= haystack.length() - needle.length();)
         {
             for (j = 0; j < needle.length(); j++ )
             {
-                if (haystack.charAt(i + j) != needle.charAt(j))
+                if (haystack.charAt(index + j) != needle.charAt(j))
                 {
                     break;
                 }
@@ -26,19 +26,21 @@ public class Solution
             {
                 break;
             }
-            if (i + j + 1 >= haystack.length() || !map.containsKey(haystack.charAt(i + j + 1)))
+            if (index + j + 1 >= haystack.length()
+                || !map.containsKey(haystack.charAt(index + j + 1)))
             {
-                i = i + j + 2;
+                index = index + j + 2;
             }
             else
             {
-                i = Math.max(i + 1, i + j + 1 - map.get(haystack.charAt(i + j + 1)));
+                index = Math.max(index + 1,
+                    index + j + 1 - map.get(haystack.charAt(index + j + 1)));
             }
         }
-        if (i > haystack.length() - needle.length())
+        if (index > haystack.length() - needle.length())
         {
-            return null;
+            return -1;
         }
-        return haystack.substring(i);
+        return index;
     }
 }
